@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script language="JavaScript" type="text/javaScript">
+
+      function validate()
+              {
+                 var a= document.Insert.firstName.value;
+                 var correct=/^[A-Za-z]+$/;
+                
+                      if(a=="")
+                      {
+                              alert("Username is Required !")
+                              return false;
+                      }
+                    var b= document.Insert.pass.value
+                      if(b=="")
+                      {
+                              alert("Password is required!")
+                              return false;
+                      }
+
+                      var c= document.Insert.mail.value
+                      if(c=="")
+                      {
+                              alert("email is required!")
+                              return false;
+                      }
+
+
+                      if(!c.match(correct))
+                      {
+                        alert("Email is not appropriate")
+                
+                      }
+                      var d= document.Insert.type.value
+                      if(c=="")
+                      {
+                              alert("type is required!")
+                              return false;
+                      }
+      
+                      if(a.match(correct))
+                      {
+                         return true;  
+                      }
+                      else
+                      {
+                          alert("only alphanum allowed in username")
+                          return false;
+                      }
+                     
+                      return true;
+              }
+      
+      
+      </script>
+  </head>
+<body>
+    <nav>
+       <div class="logo">
+        <p>Beyond Health Pharmacy</p>
+       </div>
+    </nav>
+        <div class="signup-box">
+          <h1>Sign Up</h1>
+<form name ="Insert" method="post" action="Insert" onsubmit="return validate()">
+
+        <label>First Name</label>
+         <input type="text" name="firstName" >
+        
+
+       
+         <label>Password</label>
+         <input type="text" name="pass">
+          
+
+         <label>Email</label>
+         <input type="text" name="mail">
+
+         <label>Type</label>
+         <input type="text" name="type">
+        
+        
+<input type="submit" value="Submit">
+<p class="para-2">Does not have account?   <a href="search.html">SignUp Here</p>
+
+</form>
+</div>
+
+</body>
+</html>

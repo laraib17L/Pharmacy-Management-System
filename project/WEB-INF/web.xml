@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	
+	<servlet>
+		
+		<servlet-name>Insert</servlet-name>
+		<servlet-class>Insert</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>Search</servlet-class>
+	</servlet>
+<servlet>
+		<servlet-name>Add</servlet-name>
+		<servlet-class>Add</servlet-class>
+	</servlet>
+<servlet>
+		<servlet-name>Delete</servlet-name>
+		<servlet-class>Delete</servlet-class>
+	</servlet>
+<servlet>
+		<servlet-name>Update</servlet-name>
+		<servlet-class>Update</servlet-class>
+	</servlet>
+<servlet>
+		<servlet-name>Log</servlet-name>
+		<servlet-class>Log</servlet-class>
+	</servlet>
+<servlet>
+		<servlet-name>Find</servlet-name>
+		<servlet-class>Find</servlet-class>
+	</servlet>
+<servlet>
+		<servlet-name>Find1</servlet-name>
+		<servlet-class>Find1</servlet-class>
+	</servlet>
+<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>logout</servlet-class>
+	</servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>Insert</servlet-name>
+		<url-pattern>/Insert</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/Search</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+		<servlet-name>Add</servlet-name>
+		<url-pattern>/Add</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+		<servlet-name>Delete</servlet-name>
+		<url-pattern>/Delete</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+		<servlet-name>Update</servlet-name>
+		<url-pattern>/Update</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+		<servlet-name>Log</servlet-name>
+		<url-pattern>/Log</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+		<servlet-name>Find</servlet-name>
+		<url-pattern>/Find</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+		<servlet-name>Find1</servlet-name>
+		<url-pattern>/Find1</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+</web-app>

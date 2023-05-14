@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script language="JavaScript" type="text/javaScript">
+
+      function validate()
+              {
+                 var a= document.Search.firstName.value;
+                 var correct=/^[A-Za-z]+$/;
+                
+                      if(a=="")
+                      {
+                              alert("Username is Required !")
+                              return false;
+                      }
+                    var b= document.Search.pass.value
+                      if(b=="")
+                      {
+                              alert("Password is required!")
+                              return false;
+                      }
+
+                    
+      
+                      if(a.match(correct))
+                      {
+                         return true;  
+                      }
+                      else
+                      {
+                          alert("only alphanum allowed in username")
+                          return false;
+                      }
+                     
+                      return true;
+              }
+      
+      
+      </script>
+  </head>
+<body>
+    <nav>
+       <div class="logo">
+        <p>Beyond Health Pharmacy</p>
+       </div>
+    </nav>
+        <div class="signup-box">
+          <h1>Login</h1>
+<form name ="Search" method="post" action="Log" onsubmit="return validate()">
+
+        <label>First Name</label>
+         <input type="text" name="firstName" >
+        
+
+       
+         <label>Password</label>
+         <input type="text" name="pass">
+
+        
+
+       
+
+<input type="submit" value="Submit">
+<p class="para-2">Does not have account?   <a href="insert.html">SignUp Here</p>
+
+</form>
+</div>
+
+</body>
+</html>
